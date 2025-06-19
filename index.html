@@ -3,12 +3,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Carta Digital + WhatsApp</title>
-</head>
-<body style="margin:0; font-family:sans-serif; background:#fff;">
+  <title>Menú Digital</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #fff;
+    }
 
-  <!-- ENCABEZADO FIJO -->
-  <div style="position:fixed; top:0; left:0; width:100%; background:#f1f1f1; padding:12px; box-shadow:0 2px 5px rgba(0,0,0,0.1); z-index:1000; display:flex; justify-content:space-between; align-items:center;">
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #f1f1f1;
+      padding: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .whatsapp {
+      background: #25d366;
+      color: white;
+      padding: 10px 16px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+
+    .whatsapp img {
+      height: 20px;
+      margin-right: 8px;
+    }
+
+    .content {
+      margin-top: 80px;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
     <strong>No esperes, pide directamente por WhatsApp</strong>
-    <a href="https://wa.me/34623288679" target="_blank"
-       style="background:#25d366; color:white; padding:10
+    <a href="https://wa.me/34623288679" target="_blank" class="whatsapp">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+      WhatsApp
+    </a>
+  </header>
+
+  <!-- CONTENIDO DEL MENÚ -->
+  <div class="content">
+    <h2>🥩 Carta Quebracho Asador</h2>
+    <p><strong>Entrantes:</strong></p>
+    <ul>
+      <li>Empanadas argentinas – 3,50€</li>
+      <li>Provoleta – 7,00€</li>
+      <li>Chorizo criollo – 6,50€</li>
+    </ul>
+
+    <p><strong>Carnes a la brasa:</strong></p>
+    <ul>
+      <li>Asado de tira – 18,00€</li>
+      <li>Entraña – 17,50€</li>
+      <li>Bife de chorizo – 20,00€</li>
+    </ul>
+
+    <p><strong>Bebidas:</strong></p>
+    <ul>
+      <li>Agua – 1,50€</li>
+      <li>Refrescos – 2,00€</li>
+      <li>Vino Malbec – 3,50€ por copa</li>
+    </ul>
+  </div>
+
+</body>
+</html>
