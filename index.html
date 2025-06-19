@@ -21,6 +21,19 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .textos {
+      max-width: 65%;
+    }
+
+    .textos p {
+      margin: 0;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.4;
     }
 
     .whatsapp {
@@ -32,6 +45,7 @@
       font-weight: bold;
       display: flex;
       align-items: center;
+      white-space: nowrap;
     }
 
     .whatsapp img {
@@ -40,7 +54,7 @@
     }
 
     .frame-container {
-      margin-top: 80px;
+      margin-top: 120px;
     }
 
     iframe {
@@ -53,7 +67,10 @@
 <body>
 
   <header>
-    <strong>No esperes, pide directamente por WhatsApp</strong>
+    <div class="textos">
+      <p>¡Pide fácil y sin esperar! Tu camarero virtual te atiende por WhatsApp.</p>
+      <p>Order fast, no waiting! Your virtual waiter is ready on WhatsApp.</p>
+    </div>
     <a href="https://wa.me/34623288679" target="_blank" class="whatsapp">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
       WhatsApp
